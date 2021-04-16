@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>导航栏</title>
+        <meta charset="utf-8">
+        <style>
+            .nav{ width: 1000px; height: 50px; margin: auto; background: #000; }
+            .nav ul{ margin:0; padding: 0; list-style: none; }
+            .nav ul li{ position: relative; float: left; width: 200px; height: 50px; }
+            .nav ul li a{ display: block; text-align: center; color:#ff4500; line-height: 50px; text-decoration: none; font-weight: bold; }
+            .nav ul li a:hover{ color: #000; background:#ff4500; }
+            .nav ul li ul{display: none; position: absolute;}
+            .nav ul li:hover ul{display: block;}
+            .nav ul li ul li{background: #666;}
+
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a href="#">网站首页</a></li>
+                <li>
+                    <a href="#">产品中心</a>
+                    <ul>
+                        <li><a href="#">桌面电脑</a></li>
+                        <li><a href="#">笔记本电脑</a></li>
+                        <li><a href="#">打印设备</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">客服中心</a>
+                    <ul>
+                        <li><a href="#">售前服务</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">官方电话</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">反馈中心</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
